@@ -33,11 +33,11 @@ export default function Home() {
                         </a>
                     </ShowUp>
                 </div>
-                 <ShowWithDelay delay={0.6}>
+                 <ShowWithDelay delay={0.8}>
                     <ShakingPhoto/>
                  </ShowWithDelay>
             </section>
-            <ShowWithDelay delay={1}>
+            <ShowWithDelay delay={0.6}>
                 <BackgroundWithLights />
             </ShowWithDelay>
             <Footer/>
