@@ -29,7 +29,7 @@ export default function Modal({isOpen, closeModal}) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-white bg-opacity-5 border-2 border-gray-600 rounded-2xl backdrop-blur-md p-6 text-left align-middle shadow-xl transition-all">
+                                <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-white bg-opacity-5 border-2 border-white border-opacity-5 rounded-2xl backdrop-blur-md p-6 text-left align-middle shadow-xl transition-all">
                                     <div className="flex flex-col my-5 items-center space-y-5 text-xl justify-center">
                                             <a>Home</a>
                                             <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Docs</a>
@@ -37,13 +37,13 @@ export default function Modal({isOpen, closeModal}) {
                                             <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Chart</a>
                                     </div>
                                     <div className="flex  items-center justify-center flex-row space-x-4 text-center">
-                                        <BiLogoTelegram className="w-[35px] h-[35px] hover:text-[#822FDF] transform duration-200"/>
-                                        <BiLogoTwitter className="w-[35px] h-[35px] hover:text-[#822FDF] transform duration-200"/>
+                                        <BiLogoTelegram className="w-[35px] h-[35px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                                        <BiLogoTwitter className="w-[35px] h-[35px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
                                     </div>
                                     <div className="mt-4 items-center">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center bg-opacity-80 rounded-md border border-transparent bg-red-900 px-4 py-2 text-sm font-medium text-red-100 hover:bg-red-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                            className="inline-flex justify-center bg-opacity-80 rounded-md border-2 border-white border-transparent px-4 py-2 text-sm font-medium hover:bg-red-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                             onClick={closeModal}
                                         >
                                             Close

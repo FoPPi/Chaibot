@@ -33,8 +33,8 @@ const Header = () => {
                 </div>
                 <div className="hidden lg:flex flex-row space-x-3 items-center text-center">
                     <ShowArrWithDelay delay={0.1}>
-                        <BiLogoTelegram className="w-[30px] h-[30px] hover:text-[#822FDF] transform duration-200"/>
-                        <BiLogoTwitter className="w-[30px] h-[30px] hover:text-[#822FDF] transform duration-200"/>
+                        <BiLogoTelegram className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                        <BiLogoTwitter className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
                     </ShowArrWithDelay>
                 </div>
                 <RxHamburgerMenu className="flex lg:hidden cursor-pointer w-[30px] h-[30px]" onClick={handleMobileMenuToggle}/>

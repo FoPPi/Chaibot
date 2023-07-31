@@ -1,21 +1,21 @@
 "use client"
-import ShakingPhoto from "@/components/ShakingPhoto";
-import BackgroundWithLights from "@/components/BackgroundWithLights";
-import {GrifterBold} from "@/styles/fonts";
-import {GoArrowRight} from "react-icons/go";
-import {ButtonAnim, ShowUp, ShowWithDelay} from "@/components/Animations";
-import Header from "@/components/Header";
+import ShakingPhoto from '@/components/ShakingPhoto';
+import BackgroundWithLights from '@/components/BackgroundWithLights';
+import { GrifterBold } from '@/styles/fonts';
+import { GoArrowRight } from 'react-icons/go';
+import { ButtonAnim, ShowUp, ShowWithDelay } from '@/components/Animations';
+import Header from '@/components/Header';
 
 export default function Home() {
     return (
         <>
-            <Header/>
-
+            <Header />
             <section className="flex flex-row items-center xl:mt-12 mt-48 xl:space-x-40 justify-center px-12 lg:px-20">
                 <div className="flex flex-col space-y-7">
                     <ShowUp delay={0.5}>
                         <h1 className={`${GrifterBold.className} text-5xl md:text-7xl`}>
-                            Build and deploy with<br />our telegram bot
+                            Build and deploy with
+                            <br />our telegram bot
                         </h1>
                     </ShowUp>
                     <ShowUp delay={0.6}>
@@ -32,12 +32,12 @@ export default function Home() {
                         </a>
                     </ShowUp>
                 </div>
-                <ShowWithDelay delay={0.6}>
+                 <ShowWithDelay delay={0.6}>
                     <ShakingPhoto/>
-                </ShowWithDelay>
+                 </ShowWithDelay>
             </section>
             <ShowWithDelay delay={1}>
-                <BackgroundWithLights/>
+                <BackgroundWithLights />
             </ShowWithDelay>
         </>
     );
