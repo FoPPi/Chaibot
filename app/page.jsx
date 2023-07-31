@@ -5,10 +5,11 @@ import { GrifterBold } from '@/styles/fonts';
 import { GoArrowRight } from 'react-icons/go';
 import { ButtonAnim, ShowUp, ShowWithDelay } from '@/components/Animations';
 import Header from '@/components/Header';
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
-        <>
+        <div className="min-h-screen flex flex-col">
             <Header />
             <section className="flex flex-row items-center xl:mt-12 mt-48 xl:space-x-40 justify-center px-12 lg:px-20">
                 <div className="flex flex-col space-y-7">
@@ -39,6 +40,7 @@ export default function Home() {
             <ShowWithDelay delay={1}>
                 <BackgroundWithLights />
             </ShowWithDelay>
-        </>
+            <Footer/>
+        </div>
     );
 }
