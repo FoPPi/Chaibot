@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Chaibot',
-  description: 'Build and deploy with our telegram bot',
+  description: 'Create and Launch Tokens in a Snap on Telegram!',
 }
 
 export default function RootLayout({ children }) {

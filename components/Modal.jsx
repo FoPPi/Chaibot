@@ -1,6 +1,8 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import {BiLogoTelegram, BiLogoTwitter} from "react-icons/bi";
+import Image from "next/image";
+import dextoolsLogo from "@/public/dextoolsLogo.png";
 
 export default function Modal({isOpen, closeModal}) {
     return (
@@ -31,14 +33,20 @@ export default function Modal({isOpen, closeModal}) {
                             >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-white bg-opacity-5 border-2 border-white border-opacity-5 rounded-2xl backdrop-blur-md p-6 text-left align-middle shadow-xl transition-all">
                                     <div className="flex flex-col my-5 items-center space-y-5 text-xl justify-center">
-                                            <a>Home</a>
-                                            <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Docs</a>
-                                            <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
-                                            <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Chart</a>
+                                        <a>Home</a>c
+                                        <a href="https://app.uniswap.org/#/swap?&outputCurrency=0xabec00542d141bddf58649bfe860c6449807237c&use=V2" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
+                                        <div className="flex flex-row">
+                                            <Image src={dextoolsLogo} alt={dextoolsLogo} />
+                                            <p>Dextools</p>
+                                        </div>
                                     </div>
                                     <div className="flex  items-center justify-center flex-row space-x-4 text-center">
-                                        <BiLogoTelegram className="w-[35px] h-[35px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
-                                        <BiLogoTwitter className="w-[35px] h-[35px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                                        <a href="https://t.me/chaibotportal" target="_blank" >
+                                            <BiLogoTelegram className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                                        </a>
+                                        <a href="https://twitter.com/BuildOnChaibot" target="_blank" >
+                                            <BiLogoTwitter className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                                        </a>
                                     </div>
                                     <div className="mt-4 items-center">
                                         <button

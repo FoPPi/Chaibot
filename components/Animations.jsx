@@ -45,10 +45,11 @@ export const ShowWithDelay = ({delay, children }) => {
     );
 };
 
-export const ButtonAnim = ({className, children }) => {
+export const ButtonAnim = ({className, onClick, children }) => {
     return (
         <AnimatePresence>
             <motion.button
+                onClick={onClick}
                 className={className}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}

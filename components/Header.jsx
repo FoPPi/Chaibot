@@ -6,6 +6,7 @@ import Image from 'next/image';
 import logo from '../public/cup.svg';
 import {RxHamburgerMenu} from "react-icons/rx";
 import Modal from "@/components/Modal";
+import dextoolsLogo from '../public/dextoolsLogo.png';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,15 +27,21 @@ const Header = () => {
                 <div className="hidden lg:flex text-[#C4C4C6] flex-row space-x-10 items-center text-center">
                     <ShowArrWithDelay delay={0.1}>
                         <a className="text-[#822FDF]">Home</a>
-                        <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Docs</a>
-                        <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
-                        <a href="/" target="_blank" className="hover:text-[#822FDF] transform duration-200">Chart</a>
+                        <a href="https://app.uniswap.org/#/swap?&outputCurrency=0xabec00542d141bddf58649bfe860c6449807237c&use=V2" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
+                        <div className="flex flex-row">
+                            <Image src={dextoolsLogo} alt={dextoolsLogo} />
+                            <p>Dextools</p>
+                        </div>
                     </ShowArrWithDelay>
                 </div>
                 <div className="hidden lg:flex flex-row space-x-3 items-center text-center">
                     <ShowArrWithDelay delay={0.1}>
-                        <BiLogoTelegram className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
-                        <BiLogoTwitter className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                        <a href="https://t.me/chaibotportal" target="_blank" >
+                            <BiLogoTelegram className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                        </a>
+                        <a href="https://twitter.com/BuildOnChaibot" target="_blank" >
+                            <BiLogoTwitter className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
+                        </a>
                     </ShowArrWithDelay>
                 </div>
                 <RxHamburgerMenu className="flex lg:hidden cursor-pointer w-[30px] h-[30px]" onClick={handleMobileMenuToggle}/>
