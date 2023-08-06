@@ -33,7 +33,8 @@ export default function Modal({isOpen, closeModal}) {
                             >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-white bg-opacity-5 border-2 border-white border-opacity-5 rounded-2xl backdrop-blur-md p-6 text-left align-middle shadow-xl transition-all">
                                     <div className="flex flex-col my-5 items-center space-y-5 text-xl justify-center">
-                                        <a href='/' className="text-[#822FDF]">Home</a>
+                                        <a href='/'>Home</a>
+                                        <a href='/' className="hover:text-[#822FDF] transform duration-200">Docs</a>
                                         <a href="https://app.uniswap.org/#/swap?&outputCurrency=0xabec00542d141bddf58649bfe860c6449807237c&use=V2" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
                                         <div className="flex flex-row">
                                             <Image src={dextoolsLogo} alt={dextoolsLogo} />
