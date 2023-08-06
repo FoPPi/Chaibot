@@ -37,7 +37,9 @@ const Header = () => {
                         </a>
                     </ShowArrWithDelay>
                 </div>
-                <Burger/>
+                <ShowWithDelay delay={0}>
+                    <Burger/>
+                </ShowWithDelay>
             </header>
         </>
     );
