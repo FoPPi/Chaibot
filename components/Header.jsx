@@ -6,7 +6,6 @@ import dextoolsLogo from '../public/dextoolsLogo.png';
 import Burger from "@/components/Burger";
 
 const Header = () => {
-
     return (
         <>
             <header className={`flex flex-row items-center text-center justify-between py-4 px-12 lg:px-48`}>
@@ -37,9 +36,11 @@ const Header = () => {
                         </a>
                     </ShowArrWithDelay>
                 </div>
-                <ShowWithDelay delay={0}>
-                    <Burger/>
-                </ShowWithDelay>
+                <div className="z-40">
+                    <ShowWithDelay delay={0}>
+                        <Burger/>
+                    </ShowWithDelay>
+                </div>
             </header>
         </>
     );
