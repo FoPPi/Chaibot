@@ -1,20 +1,11 @@
-"use client"
-import { useState } from "react";
 import {BiLogoTelegram, BiLogoTwitter} from "react-icons/bi";
 import {ShowArrWithDelay, ShowWithDelay} from "@/components/Animations";
 import Image from 'next/image';
 import logo from '../public/cup.svg';
-import {RxHamburgerMenu} from "react-icons/rx";
-import Modal from "@/components/Modal";
 import dextoolsLogo from '../public/dextoolsLogo.png';
+import Burger from "@/components/Burger";
 
 const Header = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    const handleMobileMenuToggle = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
-
     return (
         <>
             <header className={`flex flex-row items-center text-center justify-between py-4 px-12 lg:px-48`}>
@@ -45,11 +36,8 @@ const Header = () => {
                         </a>
                     </ShowArrWithDelay>
                 </div>
-                <button className="flex lg:hidden cursor-pointer" onClick={handleMobileMenuToggle}>
-                    <RxHamburgerMenu className="w-[30px] h-[30px]"/>
-                </button>
+                <Burger/>
             </header>
-            <Modal isOpen={isMobileMenuOpen} closeModal={handleMobileMenuToggle}/>
         </>
     );
 };
