@@ -3,11 +3,13 @@ import {ShowArrWithDelay, ShowWithDelay} from "@/components/Animations";
 import Image from 'next/image';
 import logo from '../public/cup.svg';
 import dextoolsLogo from '../public/dextoolsLogo.png';
+import Burger from "@/components/Burger";
 
 const Header = () => {
+
     return (
         <>
-            <header className={`flex flex-col lg:flex-row items-center text-center lg:justify-between py-4 px-12 lg:px-48`}>
+            <header className={`flex flex-row items-center text-center justify-between py-4 px-12 lg:px-48`}>
                 <ShowWithDelay delay={0}>
                     <div className="flex flex-row items-center space-x-3 text-center">
                         <Image className="-rotate-12" src={logo} alt="logo" width={70} height={70} />
@@ -35,17 +37,7 @@ const Header = () => {
                         </a>
                     </ShowArrWithDelay>
                 </div>
-
-                <div className="flex lg:hidden flex-row space-x-10 mt-4 z-20">
-                    <a href='/' className="hover:text-[#822FDF] transform duration-200">Docs</a>
-                    <a href="https://app.uniswap.org/#/swap?&outputCurrency=0xabec00542d141bddf58649bfe860c6449807237c&use=V2" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
-                    <a href="https://t.me/chaibotportal" target="_blank" >
-                        <BiLogoTelegram className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
-                    </a>
-                    <a href="https://twitter.com/BuildOnChaibot" target="_blank" >
-                        <BiLogoTwitter className="w-[30px] h-[30px] cursor-pointer hover:text-[#822FDF] transform duration-200"/>
-                    </a>
-                </div>
+                <Burger/>
             </header>
         </>
     );
