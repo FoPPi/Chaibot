@@ -36,7 +36,7 @@ const Header = () => {
                     </ShowArrWithDelay>
                 </div>
 
-                <div className="flex lg:hidden flex-row space-x-10 mt-4">
+                <div className="flex lg:hidden flex-row space-x-10 mt-4 z-20">
                     <a href='/' className="hover:text-[#822FDF] transform duration-200">Docs</a>
                     <a href="https://app.uniswap.org/#/swap?&outputCurrency=0xabec00542d141bddf58649bfe860c6449807237c&use=V2" target="_blank" className="hover:text-[#822FDF] transform duration-200">Buy $ESPR</a>
                     <a href="https://t.me/chaibotportal" target="_blank" >
