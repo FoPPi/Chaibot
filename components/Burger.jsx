@@ -8,7 +8,7 @@ import {BiLogoTelegram, BiLogoTwitter} from "react-icons/bi";
 const DialogDemo = () => (
     <Dialog.Root>
         <Dialog.Trigger asChild>
-            <button className="flex lg:hidden cursor-pointer z-20">
+            <button className="flex cursor-pointer z-20">
                 <RxHamburgerMenu className="w-[40px] h-[40px]"/>
             </button>
         </Dialog.Trigger>

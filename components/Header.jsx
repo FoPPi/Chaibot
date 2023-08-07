@@ -36,7 +36,7 @@ const Header = () => {
                         </a>
                     </ShowArrWithDelay>
                 </div>
-                <div className="z-40">
+                <div className="flex lg:hidden z-40">
                     <ShowWithDelay delay={0}>
                         <Burger/>
                     </ShowWithDelay>

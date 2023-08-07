@@ -59,9 +59,7 @@ export default function Home() {
                     <ShakingPhoto/>
                  </ShowWithDelay>
             </section>
-            <ShowWithDelay delay={0.6}>
-                <BackgroundWithLights />
-            </ShowWithDelay>
+            <BackgroundWithLights />
             <Footer/>
         </div>
     );
