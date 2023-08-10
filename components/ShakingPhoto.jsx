@@ -29,8 +29,9 @@ export default function ShakingPhoto() {
         >
             <Image
                 className="w-[650px]"
-                src={cup} // Замените на путь к вашей картинке
+                src={cup}
                 alt="Flying Photo"
+                loading="eager"
             />
         </motion.div>
     );
